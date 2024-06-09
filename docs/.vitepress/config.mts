@@ -2,6 +2,7 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+  base: '/nom-blog/',
   title: "NOM tech blog",
   description: "NOM tech blog",
   themeConfig: {

@@ -25,5 +25,15 @@ export default defineConfig({
     socialLinks: [
       { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
     ]
-  }
+  },
+  ignoreDeadLinks: "localhostLinks",
+  lang: "ja-JP",
+  cleanUrls: true,
+  srcDir: "./src",
+  srcExclude: ["**/README.md", "**/TODO.md"],
+  head: [["link", {rel: "icon", href: "/favicon.ico"}]],
+  lastUpdated: true,
+  sitemap: {
+    hostname: 'https://ki1989.github.io'
+  },
 })
